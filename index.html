@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Love ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <div id="page1" class="page active">
+    <h1>Hey My Love 💖</h1>
+    <p>I made something special for you...</p>
+    <button onclick="startExperience()">Open 💌</button>
+  </div>
+
+  <div id="page2" class="page">
+    <h1>Our Story 💫</h1>
+    <p>From strangers to soulmates... every moment with you is magic ✨</p>
+    <button onclick="nextPage(3)">Next ➡️</button>
+  </div>
+
+  <div id="page3" class="page">
+    <h1>Why I Like You ❤️</h1>
+    <p id="reason"></p>
+    <button onclick="generateReason()">New Reason 💕</button>
+    <button onclick="nextPage(4)">Continue ➡️</button>
+  </div>
+
+  <div id="page4" class="page">
+    <h1>One Last Thing 😳</h1>
+    <p>There's something important I want to ask you...</p>
+    <button onclick="nextPage(5)">Tell Me 💍</button>
+  </div>
+
+  <div id="page5" class="page">
+    <h1>Do You Be Love Me? 💖</h1>
+    <div class="buttons">
+      <button class="yes" onclick="yesClick()">YES ❤️</button>
+      <button class="no" onmouseover="moveButton()" ontouchstart="moveButton()">NO 😜</button>
+    </div>
+  </div>
+
+  <div id="page6" class="page">
+    <h1>YAYYYYY!!! 😍🎉</h1>
+    <p>You just made me the happiest person alive 💕</p>
+    <p>I love you forever 🫶</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
